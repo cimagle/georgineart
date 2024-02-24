@@ -1,0 +1,10 @@
+<footer style="grid: repeat(2, 20px) / auto-flow; width: 50%; text-align: center;">
+  {{ range .Site.Menus.footer }}
+    <a {{ with .Params.rel -}}rel="{{ . }}"{{ end -}} href="{{ .URL }}">
+      {{ .Name }}
+    </a>
+  {{ end }}
+  <div style="font-size: xx-small;">
+    &copy; {{ dateFormat "2006" now }} {{ .Site.Copyright }}
+  </div>
+</footer>

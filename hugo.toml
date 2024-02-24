@@ -2,3 +2,5 @@ baseURL = 'https://georgine-art.at/'
 languageCode = 'de-at'
 title = 'Georgine Art'
 theme = 'gallery'
+copyright = "Georgine Cigić"
+
